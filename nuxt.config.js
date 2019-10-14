@@ -13,7 +13,6 @@ let apiServer = process.env.API_SERVER || "http://39.105.0.116/poctest/poc";
 let publicPath =
   "http://serverless-platform.deepexi.top/applications/{{APP_KEY}}";
 // 打包资源路径应修改为oss上的东西
-publicPath = "";
 // 打包文件夹名  dist+物料hash
 
 const config = {
