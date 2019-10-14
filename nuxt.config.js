@@ -5,7 +5,8 @@ const isProd = env.MODE == 'prod'
 const mockServer =
   'https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock'
 const metaJson = require('./meta.json')
-
+const materialJson = require('../../material.json')
+const outputDir = `dist${metaJson.hash}`
 // 不能以斜杠结尾
 let apiServer = process.env.API_SERVER || 'http://39.105.0.116/poctest/poc'
 // 必须以斜杠结尾
