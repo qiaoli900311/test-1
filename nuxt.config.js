@@ -5,17 +5,13 @@ const isProd = env.MODE == 'prod'
 const mockServer =
   'https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock'
 const metaJson = require('./meta.json')
-const materialJson = require('../../material.json')
-const outputDir = `dist${metaJson.hash}`
-const ossPath = `http://serverless-platform.deepexi.top/materials/${
-  materialJson.materialId
-}/${outputDir}`
+
 // 不能以斜杠结尾
 let apiServer = process.env.API_SERVER || 'http://39.105.0.116/poctest/poc'
 // 必须以斜杠结尾
 let publicPath = process.env.PUBLIC_PATH
 // 打包资源路径应修改为oss上的东西
-publicPath = process.env.NODE_ENV === 'production' ? ossPath : ''
+publicPath = ''
 // 打包文件夹名  dist+物料hash
 
 const config = {
