@@ -10,7 +10,7 @@ const outputDir = `dist`;
 // 不能以斜杠结尾
 let apiServer = process.env.API_SERVER || "http://39.105.0.116/poctest/poc";
 // 必须以斜杠结尾
-let publicPath = `http://serverless-platform.deepexi.top/applications/${appJson.APP_KEY}`;
+let publicPath = `http://serverless-platform.deepexi.top/applications/8uldA9ePhK3H8MbTGCrymlGsVG2WAI4U`;
 // 打包资源路径应修改为oss上的东西
 // 打包文件夹名  dist+物料hash
 
