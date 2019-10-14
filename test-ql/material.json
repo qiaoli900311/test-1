@@ -1,0 +1,19 @@
+{
+	"name": "serverless-template",
+	"title": "物料库模板",
+  "description": "物料库模板",
+  "repository": {
+    "url": "物料仓库地址",
+    "private": "是否私有仓库",
+    "auth": {
+      "username": "仓库账号",
+      "password": "仓库密码"
+    }
+  },
+	"map": {
+    "components": [],
+    "blocks": [],
+    "pages": [],
+    "templates": []
+  }
+}
